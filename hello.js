@@ -26,4 +26,19 @@ console.log("OOP is Awsome!")
  * Object is a combination of Noun, Verb and Adjactive
  * 
  * 
+ * What is an Object?
+ * -> Combination of Noun, Adjective and Verb. 
+ * - Noun, Adjective are attributes
+ * - Verb is method
+ * -> A capcule taht can encapsulaet Data & Operations
+ * -> Has some private and public Properties
+ * -> Is a custom data type
+ * 
+ * An isolated Environment for properties & methods
+ * 
+ * ** Whatever you can see near besife you is an Object
+ * Tips:  Finding "Object", it's "Properties" and "Methods" are the main Mechanism of Learning Object Oriented Programming 
+ * 
+ * 
+ * 
 */

@@ -21,4 +21,9 @@
  * d.getMinutes()
  * d.getTime()
  * we use these things but we don't know how it's works behind the screen 
+ * 
+ * 2. Encapsulation - All things like Attributes, Methods in a Capsule that means in a Class
+ * Encapsulation is a way of hiding the implementation details of a class from outer access and only exposing a public interface that can be used to interact with the class 
+ * 
+ * 
 */

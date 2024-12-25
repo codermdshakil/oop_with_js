@@ -25,6 +25,8 @@
  * 2. Encapsulation - All things like Attributes, Methods in a Capsule that means in a Class
  * Encapsulation is a way of hiding the implementation details of a class from outer access and only exposing a public interface that can be used to interact with the class 
  * 
+ * Encapculation means that each object in your code should control it's own state.
+ * 
  * 5 Components of a class
  * 1. State
  * 2. Static state

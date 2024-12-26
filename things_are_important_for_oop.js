@@ -8,7 +8,8 @@
  * 1. Abstraction
  * 2. Encapsulation
  * 3. Inheritance
- * 4. Polymorphism
+ * 4. Polymorphism - বহুরূপী
+ *
  * 
  *
  * 1. Abstraction - Hide Implementation Details

@@ -29,7 +29,7 @@ class UniPerson extends Person{
     }
 
     toString(){
-        `${super().toString()} Department = ${this[_department]}, Account = ${this[_account]},Account = ${this[_account]}`;
+        return` Department = ${this[_department]}, Account = ${this[_account]}`;
     }
 
 

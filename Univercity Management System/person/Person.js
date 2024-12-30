@@ -7,7 +7,7 @@ const _contact = Symbol('contact')
 class Person{
     constructor(id, name){
         this[_id] = id
-        thid[_name] = name
+        this[_name] = name
         this[_blood] = null
         this[_contact] = null
     }

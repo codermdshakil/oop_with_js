@@ -19,7 +19,7 @@ class Teacher extends Employee {
     }
 
     toString(){
-        return `${super().toString()}, Subject : ${this[_subject]}`
+        return `  Subject : ${this[_subject]}`
     }
 }
 

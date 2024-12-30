@@ -31,7 +31,7 @@ class Guardian extends Person{
     }
 
     toString(){
-        return `${super().toString()}, Profession : ${this[_profession]}, Income : ${this[_income]}`;
+        return `Name: ${this.name}, Profession : ${this[_profession]}, Income : ${this[_income]}`;
     }
 
 }

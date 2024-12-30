@@ -30,7 +30,7 @@ class Employee extends UniPerson{
 
     toString(){
         
-        return `${super().toString()}, EmployeeId : ${this[_employeeId]}, Salary: ${this[_salary]}`;
+        return `EmployeeId : ${this[_employeeId]}, Salary: ${this[_salary]}`;
     }
 
 

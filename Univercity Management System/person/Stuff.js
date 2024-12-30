@@ -17,7 +17,7 @@ class Stuff extends Employee {
     }
 
     toString(){
-        return `${super().toString()}, Stuff title : ${this[_title]}`
+        return `  Stuff title : ${this[_title]}`
     }
 }
 

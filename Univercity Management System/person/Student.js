@@ -51,7 +51,7 @@ class Student extends UniPerson {
 
     toString(){
         
-        return `${super().toString()}, StudentId: ${this[_studentId]}`;
+        return `StudentId: ${this[_studentId]}`;
     }
 
 

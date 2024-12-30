@@ -11,5 +11,8 @@ const s = new Student("Noyon Rahman","noyon@gmail.com",22 ,['Computer Science101
 
 s.print();
 t.print();
+console.log(p);
+console.log(t);
+console.log(s);
 
 

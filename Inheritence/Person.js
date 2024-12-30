@@ -1,33 +1,38 @@
+  // private properties
+const _name = Symbol("name")
+const _email = Symbol("email")
+const _age = Symbol("age")
+
 class Person {
 
     constructor(name, email,age){
-        this._name = name
-        this._email = email
-        this._age = age
+        this[_name] = name
+        this[_email] = email
+        this[_age] = age
     }
 
     get name(){
-        return this._name
+        return this[_name]
     }
 
     set name(value){
-        this._name = value
+        this[_name] = value
     }
 
     get email(){
-        return this._email
+        return this[_email]
     }
 
     set email(value){
-        this._email = value
+        this[_email] = value
     }
 
     get age(){
-        return this._age
+        return this[_age]
     }
 
     set age(value){
-        this._age = value
+        this[_age] = value
     }
 
     print(){
@@ -35,7 +40,7 @@ class Person {
     }
 
     toString(){
-        return `Name : ${this.name}, Email: ${this.email}, Age: ${this.age}`
+        return `Name : ${this[_name]}, Email: ${this[_email]}, Age: ${this[_age]}`
     }
 
     static isValid(){

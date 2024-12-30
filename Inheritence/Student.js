@@ -1,33 +1,37 @@
 const Person = require("./Person")
 
+// Private properties 
+const _subjects = Symbol('Subjects')
+const _fee = Symbol('Fee')
+
 class Student extends Person {
     constructor(name, email, age, subjects, fee){
         super(name, email,age)
-        this._subjects = subjects
-        this._fee = fee
+        this[_subjects] = subjects
+        this[_fee] = fee
     }
 
     get subjects(){
-        return this._subjects
+        return this[_subjects]
     }
 
     set subjects(value){
-        this._subjects = value
+        this[_subjects] = value
     }
 
     get fee(){
-        return this._fee
+        return this[_fee]
     }
 
     set fee(value){
-        this._fee = value
+        this[_fee] = value
     }
 
     // method overriding - polymorphsm
     print(){
 
         super.print()
-        console.log(`Subjects : ${this._subjects}, Fee : ${this._fee} `);
+        console.log(`Subjects : ${this[_subjects]}, Fee : ${this[_fee]} `);
     }
 }
 

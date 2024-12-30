@@ -3,10 +3,10 @@ const _id = Symbol('id')
 const _name = Symbol('name')
 const _subjects = Symbol('subject')
 const _dean = Symbol('dean')
-const _teachers = Symbol('teacher')
+const _teachers = Symbol('teachers')
 
 class Department {
-    constructor({id, name, subjects, dean, teacher}) {
+    constructor({id, name, subjects, dean, teachers}) {
         this[_id] = id;
         this[_name] = name || '';
         this[_subjects] = subjects || [];
@@ -46,16 +46,20 @@ class Department {
     }
 
     set teachers(value){
-        this[_teachers] = value
+        this[_teachers] = value;
+    }
+
+    addTeacher(teacher){
+        this[_teachers].push(teacher);
     }
 
     toString(){
         return `
         Id : ${this[_id]},
         Name : ${this[_name]},
-        Subject : ${this[_subject]},
+        Subject : ${this[_subjects]},
         Dean : ${this[_dean]},
-        Teacher : ${this[_teacher]},
+        Teacher : ${this[_teachers]},
         `
     }
 

@@ -1,5 +1,5 @@
 
-const {Guardian} = require('./person')
+const {Guardian, Student} = require('./person')
 const {Contact, Address} = require('./contact')
 
 // create a Guardian
@@ -13,9 +13,18 @@ guardian.contact = new Contact({id:1, email:"khaled@test.com", phone:1231243, ad
 
 guardian.contact.address = new Address({id:1, roadNo: '6B', city:"Dhaka City", region: "Dhaka",country:"Bangladesh", postalCode:1200})
 
-// console.log(guardian.toString());
-// console.log(guardian.contact.toString());
-// console.log(guardian.contact+ '');
-// console.log(guardian.contact.address.country);
-// console.log(guardian.contact.phone);
-// console.log(guardian.blood);
+/**
+ * Student ID 1
+*/
+
+const student = new Student(1, "Rafiq", "ST001", guardian, 2000)
+student.blood = "A+"
+student.contact = new Contact({
+    id:1, 
+    email:"rafiq@gmail.com", 
+    phone:5678912,
+    alternativePhone:guardian.contact.phone,
+    address:guardian.contact.address
+})
+console.log(student.contact + " ");
+

@@ -1,25 +1,25 @@
 
 const Employee = require('./Employee');
 
-const _title = Symbol('subject');
+const _subject = Symbol('subject');
 
 
 class Teacher extends Employee {
-    constructor(id, name, title) {
+    constructor(id, name, subject) {
         super(id, name)
-        this[_title] = title
+        this[_subject] = subject
     }
 
-    get title(){
-        return this[_title]
+    get subject(){
+        return this[_subject]
     }
 
-    set title(value){
-        this[_title] = value
+    set subject(value){
+        this[_subject] = value
     }
 
     toString(){
-        return `${super().toString()}, Title : ${this[_title]}`
+        return `${super().toString()}, Subject : ${this[_subject]}`
     }
 }
 
